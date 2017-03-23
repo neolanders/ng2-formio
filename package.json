@@ -24,7 +24,7 @@
     "@angular/forms": "^2.4.10",
     "@angular/router": "^3.4.10",
     "core-js": "^2.4.1",
-    "formiojs": "GuillaumeSmaha/formio.js#master-build",
+    "formiojs": "neolanders/formio.js#feature/component/gmap-update",
     "lodash": "^4.17.4",
     "native-promise-only": "^0.8.1",
     "ng2-bootstrap": "^1.4.2",
