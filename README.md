@@ -110,11 +110,20 @@ npm install --save ng2-formio
 You can now include the module in your Angular 2.0 application like so.
 
 ```
-import { FormioModule } from 'ng2-formio';
+import { FormioModule, FormioAppConfig } from 'ng2-formio';
+
+export const AppConfig = {
+  appUrl: 'https://local.vmtl:3011',
+  apiUrl: 'https://local.vmtl:3011'
+};
+
 @NgModule({
     imports: [ BrowserModule, ReactiveFormsModule, FormioModule ],
     declarations: [ AppComponent ],
-    bootstrap: [ AppComponent ]
+    bootstrap: [ AppComponent ],
+    providers: [
+      {provide: FormioAppConfig, useValue: AppConfig},
+    ]
 })
 export class AppModule { }
 ```
