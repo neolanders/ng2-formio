@@ -113,8 +113,8 @@ You can now include the module in your Angular 2.0 application like so.
 import { FormioModule, FormioAppConfig } from 'ng2-formio';
 
 export const AppConfig = {
-  appUrl: 'https://local.vmtl:3011',
-  apiUrl: 'https://local.vmtl:3011'
+  appUrl: APP_URL,
+  apiUrl: APP_URL
 };
 
 @NgModule({
